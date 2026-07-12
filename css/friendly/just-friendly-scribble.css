@@ -1,0 +1,9 @@
+/* nav/just-friendly-scribble.css */
+/* 防御 Scribble manual-style.css 的 html{font-size:15px} 改变 rem 基准
+   max(1rem, 16px)：Scribble 时取 16px 兜底，用户调大字号时取 rem 值
+   子元素用 em 相对父级计算，不受 html font-size 影响 */
+.navbar, #tags-collapse { font-size: max(1rem, 16px); }
+.navbar .navbar-brand  { font-size: max(1.25rem, 20px); }
+.navbar .nav-link,
+.navbar .dropdown-item { font-size: 1em; }
+

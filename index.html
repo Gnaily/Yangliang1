@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/toggle-theme/toggle-theme.css">
+<link rel="stylesheet" href="/css/friendly/just-friendly-scribble.css" class="css-manual">
+    <style>
+      :root { --nav-height: 4rem; }
+      body  { padding-top: var(--nav-height); }
+    </style><style>
+  .article-card { transition: background-color .15s, border-color .15s, box-shadow .15s; }
+  .article-card:hover { background-color: var(--bs-light); border-color: var(--bs-border-color); box-shadow: 0 .25rem .5rem rgba(0,0,0,.05); }
+</style><style> .myfooter {
+  background-color: #f5f5f5;
+} </style>
+  </head>
+  <body  class="d-flex flex-column h-100">
+
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom border-2 fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand fw-semibold">回环屿</a>
+
+    <div class="d-flex align-items-center gap-2 ms-auto order-md-last">
+      <!-- 文章样式切换 -->
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary border-0 dropdown-toggle"
+                type="button" aria-expanded="false"
+                data-bs-toggle="dropdown" aria-label="阅读模式">
+          <i class="bi bi-file-earmark-richtext"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+          <li><button type="button" class="dropdown-item" data-article-theme-value="manual">📖 简约</button></li>
+          <li><button type="button" class="dropdown-item" data-article-theme-value="bs5">🎨 流行</button></li>
+        </ul>
+      </div>
+      <!-- 亮暗主题切换 -->
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary border-0 dropdown-toggle d-flex align-items-center"
+                id="bd-theme" type="button" aria-expanded="false"
+                data-bs-toggle="dropdown" aria-label="切换主题">
+          <i class="bi bi-sun-fill theme-icon-active"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="bd-theme">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center gap-2"
+                    data-bs-theme-value="light" aria-pressed="false">
+              <i class="bi bi-sun-fill"></i> 白天
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center gap-2"
+                    data-bs-theme-value="dark" aria-pressed="false">
+              <i class="bi bi-moon-fill"></i> 夜晚
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar-collapse" aria-controls="navbar-collapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#tags-collapse"
+             role="button" aria-expanded="false">文章标签</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="collapse bg-body-tertiary border-bottom" id="tags-collapse">
+  <div class="container py-2">
+
+  </div>
+</div>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div class="container py-4">
+        <!-- 简约列表 · 文档风格 -->
+<div class="list-manual">
+  <ul class="list-group">
+
+  </ul>
+</div>
+
+<!-- 卡片布局 · 现代风格（默认隐藏） -->
+<div class="list-bs5 d-none">
+  <div class="d-flex flex-column gap-3">
+
+  </div>
+</div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3  border-top myfooter">
+  <div class="container text-center">
+    <span class="text-muted">&copy; 2026 yangliang. All rights reserved.</span>
+  </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script src="/toggle-theme/color-modes.js"></script>
+<script src="/js/read-view-switch.js"></script>
+  </body>
+</html>
