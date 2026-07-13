@@ -1,0 +1,40 @@
+/* article-detail/just-friendly-custom.css */
+/* BS5 模式下 Scribble HTML 的处理（Scribble CSS 已 disabled） */
+/* ── 隐藏文档导航 UI ── */
+.button-group,
+.heading-anchor{ display: none; }
+
+/* SIntrapara 在 Scribble 中分割段落，BS5 下改为行内流 */
+.SIntrapara { display: inline; }
+
+/* ── 代码块 ── */
+blockquote.SCodeFlow {
+  margin: 1rem 0; background: var(--bs-light);
+  border: 1px solid var(--bs-border-color); border-radius: .4rem; overflow-x: auto;
+}
+blockquote.SCodeFlow table.RktBlk {
+  padding: .75rem 1rem; font-family: var(--bs-font-monospace);
+  font-size: .875rem; line-height: 1.6;
+}
+blockquote.SCodeFlow td { padding: 0 0 0 .5rem; }
+.hspace { display: inline; }
+
+/* ── Scribble 语法高亮 ── */
+.RktSym, .RktVal, .RktPn, .RktKw, .RktMod, .RktStx, .RktFn,
+.RktCmt, .RktRes, .RktOut, .RktModLink, .RktVar, .RktRdr, .RktMeta, .RktErr,
+font.badlink {
+  font-family: var(--bs-font-monospace); font-size: .9em; white-space: pre;
+}
+.RktSym, .RktModLink { color: var(--bs-primary-text-emphasis); }
+.RktVal, .RktRes  { color: var(--bs-success-text-emphasis); }
+.RktPn            { color: var(--bs-secondary-color); }
+.RktKw            { color: var(--bs-warning-text-emphasis); font-weight: 600; }
+.RktMod           { color: var(--bs-info-text-emphasis); }
+.RktStx           { color: var(--bs-danger-text-emphasis); }
+.RktCmt           { color: var(--bs-tertiary-color); font-style: italic; }
+.RktOut           { color: var(--bs-purple, #a0a); }
+.RktErr           { color: var(--bs-danger); font-weight: 600; }
+.RktVar           { color: var(--bs-secondary-color); font-style: italic; }
+.RktMeta          { color: var(--bs-body-color); font-weight: 600; }
+.RktRdr           { color: var(--bs-body-color); }
+

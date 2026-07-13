@@ -7,3 +7,10 @@
 .navbar .nav-link,
 .navbar .dropdown-item { font-size: 1em; }
 
+
+/* article-detail/just-friendly-scribble.css */
+/*
+  Scribble模式下覆盖 Scribble manual-style.css 的 h1 { margin-top: 4rem }，避免与 body padding-top 叠加
+ */
+.article-content h1 { margin-top: 1rem; padding-bottom:1rem;}
+

@@ -1,0 +1,44 @@
+/* blog.css — 文章内容 BS5 排版（与 Scribble manual CSS 互斥）*/
+
+/* ── 标题 ── */
+.article-content h1 { font-size: 1.5rem; font-weight: 650; margin-top: 0; color: var(--bs-body-color); }
+.article-content h2 { font-size: 1.2rem; font-weight: 600; margin-top: 1.75rem; color: var(--bs-body-color); }
+.article-content h3 { font-size: 1.05rem; font-weight: 600; margin-top: 1.25rem; color: var(--bs-body-color); }
+
+/* ── 正文 ── */
+.article-content { line-height: 1.9; font-size: 1.05rem; }
+.article-content p { margin-bottom: 1.2rem; }
+.article-content li p { margin-bottom: .5rem; }
+.article-content ul,
+.article-content ol { padding-left: 2rem; }
+.article-content a { color: var(--bs-link-color); }
+.article-content a:hover { color: var(--bs-link-hover-color); }
+
+/* ── 引用块（不含代码块） ── */
+.article-content blockquote:not(:has(table)) {
+  border-left: 3px solid var(--bs-warning-border-subtle);
+  padding-left: 1rem; margin: 1.5rem 0; color: var(--bs-secondary-color);
+}
+
+/* ── 内联代码（Scribble 用 span 包裹代码引用，是页面中唯一的 span） ── */
+.article-content span {
+  font-family: var(--bs-font-monospace); font-size: .9em;
+}
+
+/* ── 代码块（blockquote 内嵌 table 为代码块特征） ── */
+.article-content blockquote:has(table) {
+  margin: 1rem 0; background: var(--bs-light);
+  border: 1px solid var(--bs-border-color); border-radius: .4rem; overflow-x: auto;
+}
+.article-content blockquote table {
+  padding: .75rem 1rem; font-family: var(--bs-font-monospace);
+  font-size: .875rem; line-height: 1.6;
+}
+.article-content blockquote td { padding: 0 0 0 .5rem; }
+
+/* ── 通用 ── */
+.article-content pre {
+  background: var(--bs-light); padding: 1rem; border-radius: .5rem; overflow-x: auto;
+}
+.article-content pre code { background: none; padding: 0; }
+.article-content img { max-width: 100%; border-radius: .5rem; }
