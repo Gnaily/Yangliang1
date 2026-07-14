@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/scribble/scribble.css" class="css-manual">
+<link rel="stylesheet" href="/scribble/manual-style.css" class="css-manual">
+<link rel="stylesheet" href="/scribble/manual-racket.css" class="css-manual">
+<link rel="stylesheet" href="/css/blog.css" class="css-bs5" >
+<link rel="stylesheet" href="/toggle-theme/toggle-theme.css">
+<link rel="stylesheet" href="/css/friendly/just-friendly-custom.css" class="css-bs5" disabled>
+<link rel="stylesheet" href="/css/friendly/just-friendly-scribble.css" class="css-manual">
+    <style>
+      :root { --nav-height: 4rem; }
+      body  { padding-top: var(--nav-height); }
+    </style>
+  </head>
+  <body  class="d-flex flex-column h-100">
+
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom border-2 fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand fw-semibold">余递归</a>
+
+    <div class="d-flex align-items-center gap-2 ms-auto order-md-last">
+      <!-- 文章样式切换 -->
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary border-0 dropdown-toggle"
+                type="button" aria-expanded="false"
+                data-bs-toggle="dropdown" aria-label="阅读模式">
+          <i class="bi bi-file-earmark-richtext"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+          <li><button type="button" class="dropdown-item" data-article-theme-value="manual">📖 简约</button></li>
+          <li><button type="button" class="dropdown-item" data-article-theme-value="bs5">🎨 流行</button></li>
+        </ul>
+      </div>
+      <!-- 亮暗主题切换 -->
+      <div class="dropdown">
+        <button class="btn btn-outline-secondary border-0 dropdown-toggle d-flex align-items-center"
+                id="bd-theme" type="button" aria-expanded="false"
+                data-bs-toggle="dropdown" aria-label="切换主题">
+          <i class="bi bi-sun-fill theme-icon-active"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="bd-theme">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center gap-2"
+                    data-bs-theme-value="light" aria-pressed="false">
+              <i class="bi bi-sun-fill"></i> 白天
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center gap-2"
+                    data-bs-theme-value="dark" aria-pressed="false">
+              <i class="bi bi-moon-fill"></i> 夜晚
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar-collapse" aria-controls="navbar-collapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#tags-collapse"
+             role="button" aria-expanded="false">文章标签</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="collapse bg-body-tertiary border-bottom" id="tags-collapse">
+  <div class="container py-2">
+    <li><a class="dropdown-item" href="/tags/Racket/">Racket</a></li>
+<li><a class="dropdown-item" href="/tags/编程语言/">编程语言</a></li>
+<li><a class="dropdown-item" href="/tags/工具/">工具</a></li>
+<li><a class="dropdown-item" href="/tags/杂谈/">杂谈</a></li>
+  </div>
+</div>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div class="container py-4">
+        <article>
+  <div class="article-content">
+    <section class="SsectionLevel1" id="section 0"><h1 class="heading"><a name="(part._~e5~86~99~e4~bd~9c,~e7~bc~96~e7~a8~8b)"></a>&#29992;&#20195;&#30721;&#20889;&#25991;&#26723;<span class="button-group"><a href="#(part._~e5~86~99~e4~bd~9c,~e7~bc~96~e7~a8~8b)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h1><table cellspacing="0" cellpadding="0"><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e6~a0~87~e9~a2~98_~e7~ab~a0~e8~8a~82~e4~b8~8e~e6~ae~b5~e8~90~bd%29" class="toptoclink" data-pltdoc="x">1<span class="hspace">&nbsp;</span>&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;</a></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e6~a0~87~e9~a2~98%29" class="toclink" data-pltdoc="x">1.1<span class="hspace">&nbsp;</span>&#26631;&#39064;</a></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e8~8a~82~e4~b8~8e~e5~b0~8f~e8~8a~82%29" class="toclink" data-pltdoc="x">1.2<span class="hspace">&nbsp;</span>&#33410;&#19982;&#23567;&#33410;</a></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e5~ad~90~e5~b0~8f~e8~8a~82%29" class="toclink" data-pltdoc="x">1.2.1<span class="hspace">&nbsp;</span>&#23376;&#23567;&#33410;</a></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e6~ae~b5~e8~90~bd%29" class="toclink" data-pltdoc="x">1.3<span class="hspace">&nbsp;</span>&#27573;&#33853;</a></p></td></tr><tr><td><p><span class="hspace"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e4~bb~a3~e7~a0~81_~e5~9b~be~e7~89~87~e4~b8~8e~e8~a1~a8~e6~a0~bc%29" class="toptoclink" data-pltdoc="x">2<span class="hspace">&nbsp;</span>&#20195;&#30721;&#12289;&#22270;&#29255;&#19982;&#34920;&#26684;</a></p></td></tr><tr><td><p><span class="hspace"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e9~93~be~e6~8e~a5~e4~b8~8e~e5~bc~95~e7~94~a8%29" class="toptoclink" data-pltdoc="x">3<span class="hspace">&nbsp;</span>&#38142;&#25509;&#19982;&#24341;&#29992;</a></p></td></tr><tr><td><p><span class="hspace"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e5~86~85~e5~ae~b9~e6~a0~b7~e5~bc~8f%29" class="toptoclink" data-pltdoc="x">4<span class="hspace">&nbsp;</span>&#20869;&#23481;&#26679;&#24335;</a></p></td></tr><tr><td><p><span class="hspace"></span></p></td></tr><tr><td><p><span class="hspace">&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="../../Use-Scribble-to-Write-Articles.html#%28part._~e5~ae~9a~e4~b9~89~e8~87~aa~e5~b7~b1~e7~9a~84~e6~96~87~e6~a1~a3~e5~87~bd~e6~95~b0%29" class="toptoclink" data-pltdoc="x">5<span class="hspace">&nbsp;</span>&#23450;&#20041;&#33258;&#24049;&#30340;&#25991;&#26723;&#20989;&#25968;</a></p></td></tr></table><section class="SsectionLevel2" id="section 1"><h2 class="heading">1<span class="stt">&nbsp;</span><a name="(part._~e6~a0~87~e9~a2~98_~e7~ab~a0~e8~8a~82~e4~b8~8e~e6~ae~b5~e8~90~bd)"></a>&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;<span class="button-group"><a href="#(part._~e6~a0~87~e9~a2~98_~e7~ab~a0~e8~8a~82~e4~b8~8e~e6~ae~b5~e8~90~bd)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h2><section class="SsectionLevel3" id="section 1.1"><h3 class="heading">1.1<span class="stt">&nbsp;</span><a name="(part._~e6~a0~87~e9~a2~98)"></a>&#26631;&#39064;<span class="button-group"><a href="#(part._~e6~a0~87~e9~a2~98)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h3><p>&#20351;&#29992;<font class="badlink">title</font>&#20989;&#25968;&#12290;</p><p><div class="SIntrapara"><blockquote class="SCodeFlow"><table cellspacing="0" cellpadding="0" class="RktBlk"><tr><td><font class="badlink"><span class="RktModLink"><span class="RktMod">#lang</span></span></font><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><font class="badlink"><span class="RktModLink"><span class="RktSym">scribble/manual</span></span></font><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">title</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#25105;&#26159;&#19968;&#20010;&#26631;&#39064;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr></table></blockquote></div><div class="SIntrapara">&#19978;&#38754;&#26159;&#20351;&#29992;&#26631;&#39064;&#30340;&#26368;&#31616;&#21333;&#30340;&#26041;&#24335;&#12290;&#38500;&#27492;&#20043;&#22806;&#23427;&#36824;&#26377;&#20960;&#20010;&#21442;&#25968;&#21487;&#29992;&#12290;</div></p><blockquote class="SCodeFlow"><table cellspacing="0" cellpadding="0" class="RktBlk"><tr><td><font class="badlink"><span class="RktModLink"><span class="RktMod">#lang</span></span></font><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><font class="badlink"><span class="RktModLink"><span class="RktSym">scribble/manual</span></span></font><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">title</span></span></span><span class="RktPn">[</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">#:tag</span><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><span class="RktVal">"&#20889;&#20316;,&#32534;&#31243;"</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">#:version</span><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><span class="RktVal">"1.0"</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">#:date</span><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><span class="RktVal">"2026-07-14"</span><span class="RktPn"></span></td></tr><tr><td><span class="RktPn">]</span><span class="RktPn">{</span><span class="RktMeta">&#20026;&#20160;&#20040;XYZ&#34987;&#35774;&#35745;&#25104;&#37027;&#20010;&#26679;&#23376;&#65311;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr></table></blockquote><ul><li><p>tag&#21442;&#25968;:&#32473;&#25991;&#31456;&#29992;&#26631;&#31614;&#24402;&#31867;&#65292;&#26631;&#35760;&#20854;&#20851;&#38190;&#23646;&#24615;&#12290;</p></li><li><p>version&#21442;&#25968;:&#29992;&#20110;&#25551;&#36848;&#24403;&#21069;&#25991;&#31456;&#30340;&#29256;&#26412;&#12290;</p></li><li><p>date&#21442;&#25968;:&#29992;&#20110;&#25551;&#36848;&#20889;&#20316;&#26102;&#38388;&#12290;</p></li></ul></section><section class="SsectionLevel3" id="section 1.2"><h3 class="heading">1.2<span class="stt">&nbsp;</span><a name="(part._~e8~8a~82~e4~b8~8e~e5~b0~8f~e8~8a~82)"></a>&#33410;&#19982;&#23567;&#33410;<span class="button-group"><a href="#(part._~e8~8a~82~e4~b8~8e~e5~b0~8f~e8~8a~82)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h3><p><div class="SIntrapara">&#20351;&#29992;<font class="badlink">section</font>&#20989;&#25968;
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table cellspacing="0" cellpadding="0" class="RktBlk"><tr><td><font class="badlink"><span class="RktModLink"><span class="RktMod">#lang</span></span></font><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><font class="badlink"><span class="RktModLink"><span class="RktSym">scribble/manual</span></span></font><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">title</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#25105;&#26159;&#19968;&#31687;&#25991;&#31456;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">section</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr></table></blockquote></div><div class="SIntrapara">&#19978;&#38754;&#36825;&#20004;&#34892;&#23601;&#26159;&#20320;&#24403;&#21069;&#30475;&#21040;&#36825;&#31687;&#25991;&#31456;&#30340;&#26631;&#39064;&#21644;&#31532;&#19968;&#33410;&#30340;&#26679;&#23376;&#12290;</div></p><section class="SsectionLevel4" id="section 1.2.1"><h4 class="heading">1.2.1<span class="stt">&nbsp;</span><a name="(part._~e5~ad~90~e5~b0~8f~e8~8a~82)"></a>&#23376;&#23567;&#33410;<span class="button-group"><a href="#(part._~e5~ad~90~e5~b0~8f~e8~8a~82)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h4><p>&#24403;&#28982;,&#33410;&#30340;&#20869;&#37096;&#36824;&#21487;&#20197;&#23884;&#22871;&#33410;&#8212;<wbr></wbr>&#36825;&#37324;&#31216;&#23427;&#20026;&#23567;&#33410;&#12290;&#23427;&#20063;&#24120;&#24120;&#34987;&#21483;&#20570;&#20108;&#32423;&#26631;&#39064;&#12290;</p><p><div class="SIntrapara">&#20351;&#29992;<font class="badlink">subsection</font>&#20989;&#25968;&#21019;&#24314;&#23567;&#33410;:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table cellspacing="0" cellpadding="0" class="RktBlk"><tr><td><font class="badlink"><span class="RktModLink"><span class="RktMod">#lang</span></span></font><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><font class="badlink"><span class="RktModLink"><span class="RktSym">scribble/manual</span></span></font><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">title</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#25105;&#26159;&#19968;&#31687;&#25991;&#31456;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">section</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym">subction</span><span class="RktPn">{</span><span class="RktMeta">&#23567;&#33410;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr></table></blockquote></div></p><p><div class="SIntrapara">&#23376;&#23567;&#33410;&#20013;&#36824;&#21487;&#20197;&#26377;&#23567;&#33410;&#12290;&#20551;&#35774;&#26412;&#23376;&#23567;&#33410;&#35201;&#20171;&#32461;&#30340;&#20869;&#23481;&#30456;&#23545;&#22797;&#26434;&#65292;&#36824;&#38656;&#35201;&#20998;&#25104;&#19977;&#37096;&#20998;&#25165;&#33021;&#35762;&#28165;&#26970;&#65292;&#37027;&#20040;&#25105;&#21487;&#20197;&#20877;&#21019;&#24314;&#19977;&#20010;&#23567;&#33410;&#12290;&#23427;&#20204;&#26159;&#26412;&#23376;&#23567;&#33410;&#20013;&#30340;&#23567;&#33410;&#12290;
+&#20351;&#29992;<font class="badlink">subsection</font>&#20989;&#25968;&#21019;&#24314;&#23376;&#23567;&#33410;&#20013;&#30340;&#23567;:
+</div><div class="SIntrapara"><blockquote class="SCodeFlow"><table cellspacing="0" cellpadding="0" class="RktBlk"><tr><td><font class="badlink"><span class="RktModLink"><span class="RktMod">#lang</span></span></font><span class="RktMeta"></span><span class="hspace">&nbsp;</span><span class="RktMeta"></span><font class="badlink"><span class="RktModLink"><span class="RktSym">scribble/manual</span></span></font><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">title</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#25105;&#26159;&#19968;&#31687;&#25991;&#31456;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsection</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsection</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#23567;&#33410;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsubsection</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#23376;&#23567;&#33410;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsubsub*section</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#39318;&#20808;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsubsub*section</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#20854;&#27425;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr><tr><td><span class="RktMeta"></span><span class="RktPn">@</span><span class="RktSym"><span class="badlink"><span class="RktValLink">subsubsub*section</span></span></span><span class="RktPn">{</span><span class="RktMeta">&#26368;&#21518;</span><span class="RktPn">}</span><span class="RktMeta"></span></td></tr></table></blockquote></div><div class="SIntrapara">&#19978;&#38754;&#30340;&#26368;&#21518;&#19977;&#34892;&#23558;&#21019;&#24314;&#19979;&#38754;&#19977;&#20010;&#23376;&#23376;&#23567;&#33410;,&#23427;&#20204;&#22312;&#36825;&#37324;&#20165;&#20316;&#20026;&#31034;&#20363;&#65292;&#24182;&#27809;&#26377;&#26356;&#22810;&#38656;&#35201;&#20889;&#30340;&#12290;
+</div><div class="SIntrapara"><span class="SSubSubSubSection">&#19968;&#12289;&#36825;&#37324;&#20171;&#32461;A</span></div><div class="SIntrapara"><span class="SSubSubSubSection">&#20108;&#12289;&#36825;&#37324;&#20171;&#32461;B</span></div><div class="SIntrapara"><span class="SSubSubSubSection">&#19977;&#12289;&#36825;&#37324;&#20171;&#32461;C</span></div></p></section></section><section class="SsectionLevel3" id="section 1.3"><h3 class="heading">1.3<span class="stt">&nbsp;</span><a name="(part._~e6~ae~b5~e8~90~bd)"></a>&#27573;&#33853;<span class="button-group"><a href="#(part._~e6~ae~b5~e8~90~bd)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h3></section></section><section class="SsectionLevel2" id="section 2"><h2 class="heading">2<span class="stt">&nbsp;</span><a name="(part._~e4~bb~a3~e7~a0~81_~e5~9b~be~e7~89~87~e4~b8~8e~e8~a1~a8~e6~a0~bc)"></a>&#20195;&#30721;&#12289;&#22270;&#29255;&#19982;&#34920;&#26684;<span class="button-group"><a href="#(part._~e4~bb~a3~e7~a0~81_~e5~9b~be~e7~89~87~e4~b8~8e~e8~a1~a8~e6~a0~bc)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h2></section><section class="SsectionLevel2" id="section 3"><h2 class="heading">3<span class="stt">&nbsp;</span><a name="(part._~e9~93~be~e6~8e~a5~e4~b8~8e~e5~bc~95~e7~94~a8)"></a>&#38142;&#25509;&#19982;&#24341;&#29992;<span class="button-group"><a href="#(part._~e9~93~be~e6~8e~a5~e4~b8~8e~e5~bc~95~e7~94~a8)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h2></section><section class="SsectionLevel2" id="section 4"><h2 class="heading">4<span class="stt">&nbsp;</span><a name="(part._~e5~86~85~e5~ae~b9~e6~a0~b7~e5~bc~8f)"></a>&#20869;&#23481;&#26679;&#24335;<span class="button-group"><a href="#(part._~e5~86~85~e5~ae~b9~e6~a0~b7~e5~bc~8f)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h2></section><section class="SsectionLevel2" id="section 5"><h2 class="heading">5<span class="stt">&nbsp;</span><a name="(part._~e5~ae~9a~e4~b9~89~e8~87~aa~e5~b7~b1~e7~9a~84~e6~96~87~e6~a1~a3~e5~87~bd~e6~95~b0)"></a>&#23450;&#20041;&#33258;&#24049;&#30340;&#25991;&#26723;&#20989;&#25968;<span class="button-group"><a href="#(part._~e5~ae~9a~e4~b9~89~e8~87~aa~e5~b7~b1~e7~9a~84~e6~96~87~e6~a1~a3~e5~87~bd~e6~95~b0)" class="heading-anchor" title="Link to here">🔗</a><span style="visibility: hidden"> </span></span></h2></section></section>
+  </div>
+  <nav class="mt-5 pt-3 border-top border-light-subtle">
+    <a href="/" class="text-decoration-none link-secondary">&larr; 返回首页</a>
+  </nav>
+</article>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-3  border-top myfooter">
+  <div class="container text-center">
+    <span class="text-muted">&copy; 2026 yangliang. All rights reserved.</span>
+  </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/read-view-switch.js"></script>
+<script src="/toggle-theme/color-modes.js"></script>
+  </body>
+</html>

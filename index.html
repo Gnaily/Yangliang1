@@ -15,16 +15,14 @@
     </style><style>
   .article-card { transition: background-color .15s, border-color .15s, box-shadow .15s; }
   .article-card:hover { background-color: var(--bs-light); border-color: var(--bs-border-color); box-shadow: 0 .25rem .5rem rgba(0,0,0,.05); }
-</style><style> .myfooter {
-  background-color: #f5f5f5;
-} </style>
+</style>
   </head>
   <body  class="d-flex flex-column h-100">
 
     <header>
       <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom border-2 fixed-top">
   <div class="container">
-    <a href="/" class="navbar-brand fw-semibold">递归岛</a>
+    <a href="/" class="navbar-brand fw-semibold">余递归</a>
 
     <div class="d-flex align-items-center gap-2 ms-auto order-md-last">
       <!-- 文章样式切换 -->
@@ -81,7 +79,8 @@
 </nav>
 <div class="collapse bg-body-tertiary border-bottom" id="tags-collapse">
   <div class="container py-2">
-
+    <li><a class="dropdown-item" href="/tags/写作/">写作</a></li>
+<li><a class="dropdown-item" href="/tags/编程/">编程</a></li>
   </div>
 </div>
     </header>
@@ -91,23 +90,32 @@
         <!-- 简约列表 · 文档风格 -->
 <div class="list-manual">
   <ul class="list-group">
-    <li class="list-group-item py-3 px-3"><a href="/posts/My-Blog" class="text-decoration-none">我的博客</a></li>
+    <li class="list-group-item py-3 px-3"><a href="/posts/Use-Scribble-to-Write-Articles" class="text-decoration-none">用代码写文档</a></li><li class="list-group-item py-3 px-3"><a href="/posts/My-Blog" class="text-decoration-none">我的博客</a></li>
   </ul>
 </div>
 
 <!-- 卡片布局 · 现代风格（默认隐藏） -->
 <div class="list-bs5 d-none">
   <div class="d-flex flex-column gap-3">
-    <a href="/posts/My-Blog" class="article-card text-decoration-none d-block p-3 rounded-3 border border-warning-subtle shadow-sm">
-      <h2 class="h5 mb-1 text-body-emphasis fw-bold">我的博客</h2>
-      <p class="mb-2 text-body-tertiary" style="line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-clamp:2; overflow:hidden">&#25105;&#30340;&#21338;&#23458;🔗 &#22909;&#20123;&#24180;&#21069;, &#25105;&#24314;&#20102;&#20010;&#21338;&#23458;, &#20294;&#20854;&#23454;&#20063;...</p>
+    <a href="/posts/Use-Scribble-to-Write-Articles" class="article-card text-decoration-none d-block p-3 rounded-3 border border-warning-subtle shadow-sm">
+      <h2 class="h5 mb-1 text-body-emphasis fw-bold">用代码写文档</h2>
+      <p class="mb-2 text-body-tertiary" style="line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-clamp:2; overflow:hidden">&#29992;&#20195;&#30721;&#20889;&#25991;&#26723;🔗 &nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&#26631;&#39064;&#12289;&#31456;&#33410;&#19982;&#27573;&#33853;&nbsp...</p>
       <div class="d-flex justify-content-between align-items-center">
-        <time class="small text-warning-emphasis fw-medium">2026-07-11</time>
+        <time class="small text-warning-emphasis fw-medium">2026-07-14</time>
         <div class="d-flex gap-1">
-
+          <span class="badge rounded-pill bg-warning-subtle text-warning-emphasis">写作</span><span class="badge rounded-pill bg-warning-subtle text-warning-emphasis">编程</span>
         </div>
       </div>
-    </a>
+    </a><a href="/posts/My-Blog" class="article-card text-decoration-none d-block p-3 rounded-3 border border-warning-subtle shadow-sm">
+          <h2 class="h5 mb-1 text-body-emphasis fw-bold">我的博客</h2>
+          <p class="mb-2 text-body-tertiary" style="line-height:1.6; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; line-clamp:2; overflow:hidden">&#25105;&#30340;&#21338;&#23458;🔗 &#22909;&#20123;&#24180;&#21069;, &#25105;&#24314;&#20102;&#20010;&#21338;&#23458;, &#20294;&#20854;&#23454;&#20063;...</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <time class="small text-warning-emphasis fw-medium">2026-07-11</time>
+            <div class="d-flex gap-1">
+
+            </div>
+          </div>
+        </a>
   </div>
 </div>
       </div>
