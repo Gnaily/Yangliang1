@@ -9,8 +9,119 @@
 
 
 /* article-detail/just-friendly-scribble.css */
-/*
-  Scribble模式下覆盖 Scribble manual-style.css 的 h1 { margin-top: 4rem }，避免与 body padding-top 叠加
- */
-.article-content h1 { margin-top: 1rem; padding-bottom:1rem;}
+/* nav/just-friendly-scribble.css */
+/* 防御 Scribble manual-style.css 的 html{font-size:15px} 改变 rem 基准
+   max(1rem, 16px)：Scribble 时取 16px 兜底，用户调大字号时取 rem 值
+   子元素用 em 相对父级计算，不受 html font-size 影响 */
+.navbar,
+#tags-collapse {
+  font-size: max(1rem, 16px);
+}
 
+.navbar .navbar-brand {
+  font-size: max(1.25rem, 20px);
+}
+
+.navbar .nav-link,
+.navbar .dropdown-item {
+  font-size: 1em;
+}
+
+/*
+     Scribble模式下覆盖 Scribble manual-style.css 的 h1 { margin-top: 4rem }，避免与 body padding-top 叠加
+    */
+.article-content h1 {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: normal;
+}
+
+.article-content ul {
+  padding: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-content ol {
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .article-content {
+    background-color: var(--bs-light-bg-subtle);
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .article-content p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+  }
+
+  .article-content div {
+    font-size: 1.25rem;
+    line-height: 1.9;
+  }
+
+  .article-content ul {
+    margin-top: 0rem;
+    padding: 0;
+  }
+
+  .article-content ul li {
+    margin-top: 0.5rem;
+  }
+
+  .article-content ul li p {
+    margin: 0;
+  }
+
+  .article-content ol li {
+    margin-top: 0.5rem;
+  }
+
+  .article-content ol li p {
+    margin: 0;
+  }
+
+  .article-content img {
+    max-width: 100%;
+    border-radius: .5rem;
+    overflow-x: auto;
+  }
+}
+
+.article-content .toptoclink {
+  margin-top: 0rem;
+  padding: 0;
+}
+
+.SCodeFlow {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.article-content .SIntrapara>span {
+  max-width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+[data-bs-theme="dark"] body{
+  background-color: var(--bs-dark);
+}
+[data-bs-theme="dark"] article{
+  background-color: var(--bs-dark);
+  color: var(--bs-tertiary-color);
+}
+
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5
+{
+  color: var(--bs-light);
+}

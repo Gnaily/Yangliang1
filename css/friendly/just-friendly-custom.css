@@ -1,23 +1,100 @@
 /* article-detail/just-friendly-custom.css */
-/* BS5 模式下 Scribble HTML 的处理（Scribble CSS 已 disabled） */
-/* ── 隐藏文档导航 UI ── */
+/* article-detail/just-friendly-custom.css */
+/* article-detail/just-friendly-custom.css */
+/* article-detail/just-friendly-custom.css */
 .button-group,
 .heading-anchor{ display: none; }
 
-/* SIntrapara 在 Scribble 中分割段落，BS5 下改为行内流 */
-.SIntrapara { display: inline; }
+ table.boxed{
+  background-color: var(--bs-light-bg-subtle);
+  width: 100% !important; 
+  table-layout: auto;
+  border-collapse: collapse;
+  border: none;
+}
+
+table.boxed th, table.boxed td
+{
+ 
+ border-right: 1px solid var(--bs-border-color);
+ border: 1px solid var(--bs-border-color);
+ padding: 0.6rem 0.8rem;
+ overflow-wrap: break-word;
+}
+
+table.boxed tbody tr
+{
+ background-color: var(--bs-light-bg-subtle);
+}
+
+.article-content .toptoclink{ padding: 0rem,0rem; margin: 1.5rem 0; font-size: normal;}
+.SSubSubSubSection { font-weight: 555; }
+
+[id = "section 0"]> table:first-of-type{ 
+  margin-top: 2rem; padding: 0;
+}
+[id = "section 0"]>table:first-of-type  tr{ 
+  margin-top: 0rem; padding: 0; line-height: 0.15;
+}
+
+
+/* ── 内联代码（Scribble 用 span 包裹代码引用 ── */
+.article-content span {
+  font-family: var(--bs-font-monospace); font-size: .9em; font-weight: normal;
+}
+
+.SIntrapara >span{
+  white-space: normal;
+  max-width: 100%;
+  word-wrap: break-word; overflow-wrap: break-word;
+}
 
 /* ── 代码块 ── */
+blockquote table,
+blockquote table th,
+blockquote table tbody,
+blockquote table tr,
+blockquote table td{
+  border: 0;
+  padding: 0;
+}
+
 blockquote.SCodeFlow {
-  margin: 1rem 0; background: var(--bs-light);
+  margin: 1rem 0; background: var(--bs-light-bg-subtle);
   border: 1px solid var(--bs-border-color); border-radius: .4rem; overflow-x: auto;
 }
 blockquote.SCodeFlow table.RktBlk {
-  padding: .75rem 1rem; font-family: var(--bs-font-monospace);
-  font-size: .875rem; line-height: 1.6;
+  padding: .25rem 1rem; font-family: var(--bs-font-monospace);
+ 
 }
 blockquote.SCodeFlow td { padding: 0 0 0 .5rem; }
-.hspace { display: inline; }
+
+/* ── scribble-tools代码块 ── */
+blockquote.Rfilebox{
+  background-color: var(--bs-light-bg-subtle);
+  padding-top: 0rem;
+  padding-bottom: 0;
+  border: 1px solid var(--bs-border-color); border-radius: .4rem; overflow-x: auto;
+}
+
+blockquote .Rfilebox .Rfiletitle{
+  padding-bottom: 0.2rem;
+  background-color: var(--bs-blue);
+  border: 1px solid var(--bs-border-color); border-radius: .2rem;
+  overflow-x: auto;
+}
+
+blockquote .Rfilebox .Rfiletitle .Rfilename{
+  color: var(--bs-light-bg-subtle);
+  max-width: 80%; overflow-x: auto;
+}
+
+blockquote .Rfilebox .Rfilecontent .SCodeFlow{
+  background-color: var(--bs-light-bg-subtle);
+  color: var(--bs-blue);
+  padding: 0;
+  border: 0px;
+}
 
 /* ── Scribble 语法高亮 ── */
 .RktSym, .RktVal, .RktPn, .RktKw, .RktMod, .RktStx, .RktFn,
@@ -37,4 +114,23 @@ font.badlink {
 .RktVar           { color: var(--bs-secondary-color); font-style: italic; }
 .RktMeta          { color: var(--bs-body-color); font-weight: 600; }
 .RktRdr           { color: var(--bs-body-color); }
+
+[data-bs-theme="dark"] blockquote .Rfilebox {
+  background-color: var(--bs-light-bg-subtle);
+  color: var(--bs-secondary-text);
+}
+
+[data-bs-theme="dark"] blockquote .Rfilebox .Rfiletitle {
+  background-color: var(--bs-light-bg-subtle);
+}
+
+[data-bs-theme="dark"] blockquote .Rfilebox .Rfiletitle .Rfilename{
+  color: var(--bs-secondary-text);
+}
+
+[data-bs-theme="dark"]  blockquote .Rfilebox .Rfilecontent .SCodeFlow {
+  background-color: var(--bs-light-bg-subtle);
+  color: var(--bs-secondary-text);
+}
+
 
